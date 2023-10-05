@@ -806,6 +806,8 @@
   #include "stm32f4/pins_I3DBEEZ9.h"                // STM32F4                              env:I3DBEEZ9_V1
 #elif MB(MELLOW_FLY_E3_V2)
   #include "stm32f4/pins_MELLOW_FLY_E3_V2.h"        // STM32F4                              env:FLY_E3_V2
+#elif MB(ABRANTIX_ROBOT_V2_0)
+  #include "stm32f4/pins_ABRANTIX_ROBOT_V2_0.h" // STM32F4                                  env:STM32F401RC_creality env:STM32F401RC_creality_jlink env:STM32F401RC_creality_stlink
 
 //
 // ARM Cortex-M7

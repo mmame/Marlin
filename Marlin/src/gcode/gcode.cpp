@@ -806,6 +806,11 @@ void GcodeSuite::process_parsed_command(const bool no_ok/*=false*/) {
         case 261: M261(); break;                                  // M261: Request data from an i2c slave
       #endif
 
+      #if ENABLED(EXPERIMENTAL_I2CBUS_ABRANTIX)
+        case 270: M270(); break;                                  // M270: Send data to an i2c slave for Abrantix I2C devices
+        case 271: M271(); break;                                  // M271: Request data from an i2c slave for Abrantix I2C devices
+      #endif
+
       #if ENABLED(PREVENT_COLD_EXTRUSION)
         case 302: M302(); break;                                  // M302: Allow cold extrudes (set the minimum extrude temperature)
       #endif
